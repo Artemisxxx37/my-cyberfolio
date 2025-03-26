@@ -1,0 +1,337 @@
+<D0CTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔒</text></svg>">
+    <style>
+        body {
+            font-family: 'Ubuntu Mono', monospace;
+            background-color: #0a0a0a;
+            color: #00ff41;
+        }
+        .hacker-text {
+            color: #00ff41;
+            text-shadow: 0 0 5px #00ff41;
+        }
+        .skill-card {
+            transition: all 0.3s ease;
+            border: 1px solid #00ff41;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 255, 65, 0.3);
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background: #00ff41;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-black py-4 px-6 border-b border-green-500">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold hacker-text">CYBER_PORTFOLIO</div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#skills" class="hacker-text hover:text-white">Skills</a>
+                <a href="#achievements" class="hacker-text hover:text-white">Achievements</a>
+                <a href="#rankings" class="hacker-text hover:text-white">Rankings</a>
+                <a href="#contact" class="hacker-text hover:text-white">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-20 px-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 hacker-text">CYBERSECURITY SPECIALIST</h1>
+            <p class="text-xl md:text-2xl mb-8 hacker-text">Forensics | OSINT | Web/PWN Challenges</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#skills" class="bg-green-500 text-black px-6 py-3 rounded font-bold hover:bg-green-600 transition">View Skills</a>
+                <a href="#contact" class="border border-green-500 text-green-500 px-6 py-3 rounded font-bold hover:bg-green-500 hover:text-black transition">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 px-6 bg-gray-900">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center hacker-text">SKILLS & EXPERTISE</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Forensics Card -->
+                <div class="skill-card p-6 rounded-lg bg-black">
+                    <div class="text-4xl mb-4 text-center text-green-500">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center hacker-text">Digital Forensics</h3>
+                    <p class="text-gray-300">Memory analysis, disk forensics, network forensics, malware analysis, forensic tool development</p>
+                </div>
+
+                <!-- OSINT Card -->
+                <div class="skill-card p-6 rounded-lg bg-black">
+                    <div class="text-4xl mb-4 text-center text-green-500">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center hacker-text">OSINT</h3>
+                    <p class="text-gray-300">Social media investigation, dark web monitoring, geolocation analysis, threat intelligence gathering</p>
+                </div>
+
+                <!-- Web Security Card -->
+                <div class="skill-card p-6 rounded-lg bg-black">
+                    <div class="text-4xl mb-4 text-center text-green-500">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center hacker-text">Web Security</h3>
+                    <p class="text-gray-300">Web application pentesting, vulnerability assessment, secure coding practices, bug bounty hunting</p>
+                </div>
+
+                <!-- Binary Exploitation Card -->
+                <div class="skill-card p-6 rounded-lg bg-black">
+                    <div class="text-4xl mb-4 text-center text-green-500">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center hacker-text">Binary Exploitation</h3>
+                    <p class="text-gray-300">Reverse engineering, buffer overflows, ROP chains, format string vulnerabilities, shellcoding</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-16 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center hacker-text">CTF ACHIEVEMENTS</h2>
+            <div class="max-w-3xl mx-auto">
+                <!-- Timeline Item 1 -->
+                <div class="relative pl-8 mb-12 timeline-item">
+                    <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-green-500"></div>
+                    <h3 class="text-xl font-bold hacker-text">picoCTF 2025</h3>
+                    <p class="text-gray-300 mb-2">56th in Africa | Top 1% globally</p>
+                    <p class="text-gray-400">Solved challenges in forensics, cryptography, and binary exploitation</p>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="relative pl-8 mb-12 timeline-item">
+                    <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-green-500"></div>
+                    <h3 class="text-xl font-bold hacker-text">HackTheBox - Eldoria</h3>
+                    <p class="text-gray-300 mb-2">Pro Hacker Rank</p>
+                    <p class="text-gray-400">Completed numerous machines with focus on privilege escalation and lateral movement</p>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="relative pl-8 mb-12 timeline-item">
+                    <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-green-500"></div>
+                    <h3 class="text-xl font-bold hacker-text">TryHackMe - Hackfinity Battle 2025</h3>
+                    <p class="text-gray-300 mb-2">Legend Rank</p>
+                    <p class="text-gray-400">Top performer in monthly challenges with focus on web security and forensics</p>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="relative pl-8 timeline-item">
+                    <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-green-500"></div>
+                    <h3 class="text-xl font-bold hacker-text">MetaCTF Monthly Challenges</h3>
+                    <p class="text-gray-300 mb-2">Regular Participant</p>
+                    <p class="text-gray-400">Consistent top performer in OSINT and forensic challenges</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="py-16 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center hacker-text">CERTIFICATIONS</h2>
+            
+            <div class="text-center mb-8">
+                <a href="https://www.linkedin.com/in/artemis37/details/certifications/" 
+                   target="_blank"
+                   class="inline-flex items-center bg-[#0077B5] text-white px-6 py-3 rounded-lg hover:bg-[#006097] transition">
+                    <i class="fab fa-linkedin mr-2"></i>
+                    View My Certificates on LinkedIn
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Certificate Placeholder 1 -->
+                <div class="skill-card bg-black p-6 rounded-lg border border-green-500 hover:border-white transition-all duration-300">
+                    <div class="flex justify-center mb-4">
+                        <i class="fas fa-search text-5xl text-green-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 hacker-text text-center">Certified Ethical Hacker</h3>
+                    <p class="text-gray-300 mb-1 text-center">Cisco</p>
+                    <p class="text-gray-400 mb-4 text-center">Issued: 2024</p>
+                    <a href="https://www.credly.com/badges/1ec28a8e-14cc-43ba-ab84-037929f021e0/linked_in_profile" class="block w-full bg-green-500 text-black py-2 px-4 rounded text-center font-bold hover:bg-green-600 transition">
+                        Verify on LinkedIn
+                    </a>
+                </div>
+
+                <!-- Certificate Placeholder 2 -->
+                <div class="skill-card bg-black p-6 rounded-lg border border-green-500 hover:border-white transition-all duration-300">
+                    <div class="flex justify-center mb-4">
+                        <i class="fas fa-shield-alt text-5xl text-green-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 hacker-text text-center">Junior pentesting</h3>
+                    <p class="text-gray-300 mb-1 text-center">TryHackMe</p>
+                    <p class="text-gray-400 mb-4 text-center">Issued: 2024</p>
+                    <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-PWOX71YZ9O.pdf" class="block w-full bg-green-500 text-black py-2 px-4 rounded text-center font-bold hover:bg-green-600 transition">
+                        Verify 
+                    </a>
+                </div>
+
+                <!-- Certificate Placeholder 3 -->
+                <div class="skill-card bg-black p-6 rounded-lg border border-green-500 hover:border-white transition-all duration-300">
+                    <div class="flex justify-center mb-4">
+                        <i class="fas fa-lock text-5xl text-green-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 hacker-text text-center">PYTHON3-Developper</h3>
+                    <p class="text-gray-300 mb-1 text-center">Coding-Game</p>
+                    <p class="text-gray-400 mb-4 text-center">Issued: 2024</p>
+                    <a href="https://www.codingame.com/certification/nr2T7NcpC8afy9gTdd78Kg" class="block w-full bg-green-500 text-black py-2 px-4 rounded text-center font-bold hover:bg-green-600 transition">
+                        Verify on 
+                    </a>
+                </div>
+                 <!-- Certificate Placeholder 4 -->
+                <div class="skill-card bg-black p-6 rounded-lg border border-green-500 hover:border-white transition-all duration-300">
+                  <div class="flex justify-center mb-4">
+                      <i class="fas fa-code text-5xl text-green-500"></i>
+                  </div>
+                  <h3 class="text-xl font-bold mb-2 hacker-text text-center">Software engineering Job Simulation</h3>
+                  <p class="text-gray-300 mb-1 text-center">Forage</p>
+                  <p class="text-gray-400 mb-4 text-center">Issued: 2025</p>
+                  <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/j43dGscQHtJJ57N54/a77WE3de8qrxWferQ_j43dGscQHtJJ57N54_3mYmHyeBmp6g6XBXL_1737918366498_completion_certificate.pdf" class="block w-full bg-green-500 text-black py-2 px-4 rounded text-center font-bold hover:bg-green-600 transition">
+                      Verify on 
+                  </a>
+              </div>
+              <!-- Certificate Placeholder 5 -->
+              <div class="skill-card bg-black p-6 rounded-lg border border-green-500 hover:border-white transition-all duration-300">
+                <div class="flex justify-center mb-4">
+                    <i class="fas fa-user-secret text-5xl text-green-500"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2 hacker-text text-center">Cybersecurity Job Simulation</h3>
+                <p class="text-gray-400 mb-4 text-center">Issued: 2024</p>
+                <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/mfxGwGDp6WkQmtmTf/vcKAB5yYAgvemepGQ_mfxGwGDp6WkQmtmTf_3mYmHyeBmp6g6XBXL_1731092988976_completion_certificate.pdf" class="block w-full bg-green-500 text-black py-2 px-4 rounded text-center font-bold hover:bg-green-600 transition">
+                    Verify on 
+                </a>
+            </div>
+             <!-- Certificate Placeholder 6 -->
+            <div class="skill-card bg-black p-6 rounded-lg border border-green-500 hover:border-white transition-all duration-300">
+              <div class="flex justify-center mb-4">
+                  <i class="fas fa-globe text-5xl text-green-500"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-2 hacker-text text-center">Intro to Cybersecurity</h3>
+              <p class="text-gray-300 mb-1 text-center">TryHackMe</p>
+              <p class="text-gray-400 mb-4 text-center">Issued: 2024</p>
+              <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-OPUHF7VY1R.pdf" class="block w-full bg-green-500 text-black py-2 px-4 rounded text-center font-bold hover:bg-green-600 transition">
+                  Verify on 
+              </a>
+          </div>
+        </div>
+    </section>
+
+    <!-- Rankings Section -->
+    <section id="rankings" class="py-16 px-6 bg-gray-900">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center hacker-text">PLATFORM RANKINGS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- HTB Card -->
+                <div class="bg-black p-6 rounded-lg border border-green-500">
+                    <div class="flex items-center mb-4">
+                        <img src="https://www.hackthebox.com/images/logo-htb.svg" alt="HTB Logo" class="h-10 mr-4">
+                        <h3 class="text-xl font-bold hacker-text">HackTheBox</h3>
+                    </div>
+                    <p class="text-gray-300 mb-2">Pro Hacker Rank</p>
+                    <p class="text-gray-400 mb-4">Top 2% of all users</p>
+                    <a href="https://app.hackthebox.com/profile/1442922" target="_blank" class="block w-full bg-green-500 text-black py-2 px-4 rounded text-center font-bold hover:bg-green-600 transition">View Profile</a>
+                </div>
+
+                <!-- THM Card -->
+                <div class="bg-black p-6 rounded-lg border border-green-500">
+                    <div class="flex items-center mb-4">
+                        <img src="https://tryhackme.com/img/favicon.png" alt="THM Logo" class="h-10 mr-4">
+                        <h3 class="text-xl font-bold hacker-text">TryHackMe</h3>
+                    </div>
+                    <p class="text-gray-300 mb-2">Legend Rank</p>
+                    <p class="text-gray-400 mb-4">Top 1% of all users</p>
+                    <a href="https://tryhackme.com/p/artemis6x" target="_blank" class="block w-full bg-green-500 text-black py-2 px-4 rounded text-center font-bold hover:bg-green-600 transition">View Profile</a>
+                </div>
+
+                <!-- Social Profiles Card -->
+                <div class="bg-black p-6 rounded-lg border border-green-500">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-user-secret text-3xl mr-4 text-green-500"></i>
+                        <h3 class="text-xl font-bold hacker-text">Social Profiles</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <a href="https://github.com/Artemisxxx37" target="_blank" class="flex items-center justify-center bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-700 transition">
+                            <i class="fab fa-github mr-2"></i> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/artemis37" target="_blank" class="flex items-center justify-center bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition">
+                            <i class="fab fa-linkedin mr-2"></i> LinkedIn
+                        </a>
+                        <a href="https://x.com/tapsoba_jacob" target="_blank" class="flex items-center justify-center bg-black text-white py-2 px-4 rounded hover:bg-gray-900 transition border border-gray-700">
+                            <i class="fab fa-x-twitter mr-2"></i> X (Twitter)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold mb-12 text-center hacker-text">GET IN TOUCH</h2>
+            <form class="bg-black p-8 rounded-lg border border-green-500">
+                <div class="mb-6">
+                    <label for="name" class="block mb-2 hacker-text">Name</label>
+                    <input type="text" id="name" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:border-green-500 text-white">
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block mb-2 hacker-text">Email</label>
+                    <input type="email" id="email" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:border-green-500 text-white">
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block mb-2 hacker-text">Message</label>
+                    <textarea id="message" rows="5" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:border-green-500 text-white"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-green-500 text-black py-3 px-6 rounded font-bold hover:bg-green-600 transition">Send Message</button>
+            </form>
+            <div class="flex justify-center space-x-6 mt-8">
+                <a href="https://github.com/Artemisxxx37" class="text-2xl text-green-500 hover:text-white"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/artemis37" class="text-2xl text-green-500 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/tapsoba_jacob" class="text-2xl text-green-500 hover:text-white"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-2xl text-green-500 hover:text-white"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8 px-6 border-t border-green-500">
+        <div class="container mx-auto text-center">
+            <p class="hacker-text">© 2025 Cybersecurity Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
