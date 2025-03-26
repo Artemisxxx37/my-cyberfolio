@@ -1,0 +1,112 @@
+/* About Section Styles */
+#about {
+    scroll-margin-top: 80px;
+}
+
+.profile-img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 4px solid #00ff41;
+    width: 256px;
+    height: 256px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+    transition: all 0.3s ease;
+}
+
+.profile-img-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 255, 65, 0.5);
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Project Section Styles */
+.project-card {
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.project-tech-badge {
+    background-color: #1a1a1a;
+    color: #00ff41;
+    border: 1px solid #00ff41;
+    transition: all 0.2s ease;
+}
+
+.project-tech-badge:hover {
+    background-color: #00ff41;
+    color: #000;
+}
+
+/* Animation for project cards */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.project-card {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .profile-img-container {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 2rem;
+    }
+    
+    .project-filter-group {
+        flex-wrap: wrap;
+    }
+    
+    .project-filter {
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Skill bars animation */
+.skill-bar {
+    height: 8px;
+    background-color: #1a1a1a;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background-color: #00ff41;
+    border-radius: 4px;
+    transition: width 1s ease-in-out;
+    width: 0;
+}
+
+/* Active filter button style */
+.project-filter.active {
+    background-color: #00ff41 !important;
+    color: #000 !important;
+}
+
+/* Hover effects for cards */
+.skill-card:hover, 
+.project-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 25px rgba(0, 255, 65, 0.4);
+}
+
+/* Section spacing */
+section {
+    padding: 5rem 1.5rem;
+}
+
+/* Navigation active state */
+nav a.active {
+    color: #00ff41;
+    text-shadow: 0 0 10px #00ff41;
+}
